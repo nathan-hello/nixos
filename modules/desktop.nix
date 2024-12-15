@@ -33,7 +33,14 @@
 			package = pkgs.dwm;
 		};
   	};
+
   };
+
+  services.libinput.mouse = {
+      accelProfile = "flat";
+      accelSpeed = "0.0";
+  };
+
   environment.etc."X11/xinit/xinitrc".text = ''
     feh --bg-scale /etc/nixos/dirty/wallpaper/black.jpg
     dwmblocks &

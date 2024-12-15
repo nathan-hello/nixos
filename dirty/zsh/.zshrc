@@ -33,6 +33,7 @@ plugins=(git)
 
 unsetopt AUTO_CD
 alias dotfiles="/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME"
+alias rm="rm -iv"
 alias ls="exa -lh --header --group-directories-first --sort Name"
 alias la="exa -lah --header --group-directories-first --sort Name"
 alias flogout="pkill -KILL -u $(whoami)"

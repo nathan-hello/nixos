@@ -55,6 +55,7 @@ static const Layout layouts[] = { { "", tile } };
 #define DMENU	    "dmenu_run"
 #define STARTMENU   "startmenu.sh"
 #define SCREENSHOT  "flameshot gui"
+#define BOOMER	    "boomer"
 #define UPVOL	    "volup.sh"
 #define DOWNVOL	    "voldown.sh"
 #define MUTEVOL	    "mutevol.sh"
@@ -132,6 +133,7 @@ static const Button buttons[] = {
 	// { ClkClientWin,  MOD1,    Button3, windowmenu,     {0}              },
 	{ ClkClientWin,  MOD2,    Button1, resizemouse,    {0}              },
 	{ ClkClientWin,  MOD2,    Button3, togglefloating, {0}              },
+	{ ClkClientWin,  MOD1,       Button2, spawn,        SHCMD(BOOMER)   },
 	/* root window                                                      */
 	{ ClkRootWin,    0,       Button3, spawn,          SHCMD(STARTMENU) },
 	//{ ClkRootWin,    0,       Button3, focusmaster,    {0}              },

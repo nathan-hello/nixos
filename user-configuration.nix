@@ -12,6 +12,8 @@
       spotify
       (discord.override { withVencord = true; })
 
+      chromium
+
       keepassxc
       alacritty
       ffmpeg

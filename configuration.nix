@@ -39,8 +39,10 @@
   environment.systemPackages = with pkgs; [
     git
     vim 
+    btop
     wget
     dconf # gtk
+    pavucontrol
   ];
   
 
