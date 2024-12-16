@@ -38,7 +38,7 @@ alias ls="exa -lh --header --group-directories-first --sort Name"
 alias la="exa -lah --header --group-directories-first --sort Name"
 alias flogout="pkill -KILL -u $(whoami)"
 
-alias snen="cd /etc/nixos && sudo nvim ."
+alias snen="cd /etc/nixos && sudo nvim -u /etc/nixos/dirty/nvim/init.lua ."
 alias snrs="sudo nixos-rebuild switch"
 alias snrt="sudo nixos-rebuild test"
 
